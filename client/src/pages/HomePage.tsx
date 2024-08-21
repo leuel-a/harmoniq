@@ -1,8 +1,10 @@
+import MusicCard from '../components/MusicCard'
 import {
   GenreButton,
   GenreFilters,
   HomePageFilters,
-  SearchInput
+  SearchInput,
+  MusicGrid
 } from '../components/styles/pages/HomePage.styled'
 
 export default function HomePage() {
@@ -15,10 +17,21 @@ export default function HomePage() {
           <GenreButton>rock</GenreButton>
           <GenreButton>rap</GenreButton>
           <GenreButton>classical</GenreButton>
-          <GenreButton>electronic</GenreButton>
           <GenreButton>ethiopian</GenreButton>
         </GenreFilters>
       </HomePageFilters>
+      <MusicGrid>
+        <div>
+          <MusicCard />
+          <MusicCard />
+          <MusicCard />
+          <MusicCard />
+          <MusicCard />
+          <MusicCard />
+          <MusicCard />
+          <MusicCard />
+        </div>
+      </MusicGrid>
     </main>
   )
 }

@@ -15,7 +15,7 @@ export const HomePageFilters = styled.div`
   }
 `
 export const GenreFilters = styled.div`
-  gap: .5rem;
+  gap: 0.5rem;
 
   display: flex;
   justify-content: center;
@@ -54,5 +54,37 @@ export const SearchInput = styled.input`
 
   &:focus {
     outline: none;
+  }
+`
+
+export const MusicGrid = styled.div`
+  display: grid;
+  margin-block: 2rem;
+  grid-template-columns: minmax(2rem, 1fr) minmax(0, 80rem) minmax(2rem, 1fr);
+
+  & > :first-child {
+    display: grid;
+    grid-column: 2;
+
+    grid-template-columns: repeat(1, minmax(0, 40rem));
+    gap: 1rem;
+  }
+
+  @media (min-width: 35rem) {
+    & > :first-child {
+      grid-template-columns: repeat(2, minmax(0, 40rem));
+    }
+  }
+
+  @media (min-width: 45rem) {
+    & > :first-child {
+      grid-template-columns: repeat(3, minmax(0, 40rem));
+    }
+  }
+
+  @media (min-width: 55rem) {
+    & > :first-child {
+      grid-template-columns: repeat(4, minmax(0, 40rem));
+    }
   }
 `
