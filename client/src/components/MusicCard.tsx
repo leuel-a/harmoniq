@@ -4,7 +4,7 @@ export default function MusicCard() {
   return (
     <Card>
       <div>
-        <img src="../../../images/default-imge.jpg" alt="Default Music Image" />
+        <img src="../../../images/default-cover-art.png" alt="Default Music Image" />
       </div>
       <CardContent>
         <CardHeader>
