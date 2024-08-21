@@ -15,6 +15,12 @@
   font-family: 'Precious';
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --clr-dark: 230 35% 7%;
   --clr-light: 231 77% 90%;
@@ -42,6 +48,10 @@ li {
 
 ul {
   list-style: none;
+}
+
+input {
+  color: inherit;
 }
 
 body {
