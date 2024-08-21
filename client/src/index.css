@@ -1,0 +1,53 @@
+@font-face {
+  src: url('../fonts/glacial/GlacialIndifference-Bold.otf') format('opentype');
+  font-family: 'Glacial';
+  font-weight: 700;
+}
+
+@font-face {
+  src: url('../fonts/glacial/GlacialIndifference-Regular.otf') format('opentype');
+  font-family: 'Glacial';
+  font-weight: 400;
+}
+
+@font-face {
+  src: url('../fonts/precious/Precious.ttf') format('truetype');
+  font-family: 'Precious';
+}
+
+:root {
+  --clr-dark: 230 35% 7%;
+  --clr-light: 231 77% 90%;
+  --clr-white: 0 0% 100%;
+
+  --ff-sans: 'Glacial', 'sans-serif';
+  --ff-sans-curs: 'Precious', 'sans-serif';
+
+  --img-icon-close: '../images/icon-close.svg';
+  --img-icon-burger:'../images/icon-hamburger.svg';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  color: hsl(var(--clr-white));
+  font-size: 1.25rem;
+  font-family: var(--ff-sans);
+  background-color: hsl(var(--clr-dark));
+}
