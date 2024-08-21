@@ -39,10 +39,14 @@ export const SearchInput = styled.input`
   padding-block: 0.8rem;
   padding-inline: 2rem;
   font-size: 0.925rem;
-  min-width: 50%;
+  width: 100%;
   color: hsl(var(--clr-white));
   border: 1px solid hsl(var(--clr-white));
   border-radius: 8px;
+
+  @media (min-width: 45em) {
+    width: 30%;
+  }
 
   &::placeholder {
     color: hsl(var(--clr-white));
