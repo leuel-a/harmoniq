@@ -15,24 +15,22 @@ export const StyledNav = styled.nav``
 export const StyledNavList = styled.ul`
   display: flex;
   gap: var(--flex-gap, 4rem);
+  letter-spacing: 4.75px;
+  font-family: var(--ff-sans-cond);
 
   a {
-    color: hsl(var(--clr-light));
     text-decoration: none;
-  }
-
-  li {
-    /* padding-inline: 2rem; */
   }
 
   @media (max-width: 45rem) {
     position: fixed;
     inset: 0 0 0 30%;
     --flex-gap: 1rem;
+    font-weight: 500;
     padding: 8rem 2.5rem;
     flex-direction: column;
     background-color: hsl(0 0% 100% / 0.1);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     transition: transform 500ms ease-out;
 
     &[data-expanded='true'][data-mobile='true'] {
@@ -47,6 +45,21 @@ export const StyledNavList = styled.ul`
 
 export const StyledNavListItem = styled.li`
   padding-block: 1.2rem;
+  --border-width: 3px;
+  border-bottom: var(--border-width) solid hsl(var(--clr-white) / 0);
+
+  @media (max-width: 45rem) {
+    border: 0;
+    &:hover {
+      border-right: var(--border-width) solid hsl(var(--clr-white) / 0.5);
+    }
+  }
+
+  @media (min-width: 45rem) {
+    &:hover {
+      border-bottom: var(--border-width) solid hsl(var(--clr-white) / 0.5);
+    }
+  }
 `
 export const StyledHeaderLogo = styled.h1`
   color: var(--clr-accent);

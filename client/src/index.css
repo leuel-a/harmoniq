@@ -79,6 +79,10 @@ input {
   color: inherit;
 }
 
+a {
+  color: inherit;
+}
+
 body {
   min-height: 100vh;
   color: hsl(var(--clr-white));

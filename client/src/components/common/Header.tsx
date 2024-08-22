@@ -39,10 +39,14 @@ export default function Header() {
       <StyledNav>
         <StyledNavList data-expanded={expanded} data-mobile={isMobile}>
           <StyledNavListItem aria-selected="true">
-            <Link to="#">Home</Link>
+            <Link to="/">Home</Link>
           </StyledNavListItem>
           <StyledNavListItem aria-selected="false">
             <Link to="#">Stats</Link>
+          </StyledNavListItem>
+          {/* Add Music */}
+          <StyledNavListItem>
+            <Link to="/add_music">Add Music</Link>
           </StyledNavListItem>
         </StyledNavList>
       </StyledNav>
