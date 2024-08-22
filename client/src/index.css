@@ -79,6 +79,14 @@ input {
   color: inherit;
 }
 
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
 a {
   color: inherit;
 }
